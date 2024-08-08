@@ -21,7 +21,7 @@ library(lme4)
 ## - .(dot) is all other variables in the dataset
 ## - "- species" means that we are excluding species
 ## - "(1 | species)" specifies a random intercept for the species variable. Accounting for the fact that measurements from different species may be correlated
-f <- function(i) {
+createMatrix <- function(i) {
   lmer(Petal.Width ~ . - Species + (1 | Species), data = iris)
 }
 
@@ -29,15 +29,15 @@ f <- function(i) {
 
 #Non-parallel code execution
 #lapply iterates over a list
-#Runs the f function above 1000 times
-system.time(nonParallelFunc <- lapply(1:1000, f))
+#Runs the createMatrix function above 1000 times
+system.time(nonParallelFunc <- lapply(1:1000, createMatrix))
 
 #Parallel code execution
 #mclapply is provided by the parallel package, and splits the iteration of multiple cores
-#Runs the f function above 1000 times
-system.time(parallelFunc <- mclapply(1:1000, f))
+#Runs the createMatrix function above 1000 times
+system.time(parallelFunc <- mclapply(1:1000, createMatrix))
 
 ###Display Function Results###
-#f()
+#createMatrix()
 
 
