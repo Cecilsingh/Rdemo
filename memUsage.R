@@ -3,11 +3,11 @@
 #The value to be repeated is the number 1 
 #1e9 is the scientific notation for one billion
 
-y <- rep(1, 1e9)
+firstHalfMem <- rep(1, 1e9)
 
-a <- rep(1, 1e9)
+secondHalfMem <- rep(1, 1e9)
 
-z <- rep(1, 1e8)
+additionalMem <- rep(1, 1e8)
 
 library(tictoc)
 
