@@ -21,12 +21,12 @@ tictoc::tic()
 
 for (i in 1:100){
   j=i+1
-  gc()
+  #gc()
 }
 
 tictoc::toc()
 
 
-rm(firstHalfMem)
+#rm(firstHalfMem)
 
-gc()
+#gc()
