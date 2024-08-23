@@ -8,7 +8,7 @@ library(parallel)
 
 #Create function that loops through 1000 times
 createForLoop <- function(i){
-  for (i in 1:1000){
+  for (i in 1:10000){
     j=i+1
   }  
 }
@@ -27,5 +27,3 @@ system.time(parallelFunc <- mclapply(1:1000, createForLoop))
 
 ###Display Function Results###
 #createForLoop()
-
-
