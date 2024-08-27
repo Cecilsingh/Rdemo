@@ -2,7 +2,7 @@
 A quick description of the demo files covered in my demo on the 8/30/24.
 
 ## cpuMgmt :computer:
-Contains all of the files related to CPU management in R.
+**Contains all of the files related to CPU management in R.**
 
 <dl>
 <dt>matrix.R</dt> 
@@ -16,7 +16,7 @@ Contains all of the files related to CPU management in R.
 </dl>
 
 ## memMgmt :abacus:
-Contains all of the files related to memory management in R.
+**Contains all of the files related to memory management in R.**
 <dl>
 <dt>memUsage.R</dt>
 <dd>The R code for creating a repeating variable that consumes all of the available memory on the localhost(in my case, 16gb). From there, the time taken to iterate over a FOR loop is recorded and displayed. The FOR loop is primarily used to show the time difference taken when garbage collection is used within the loop, versus when this is commented out.</dd>
