@@ -1,4 +1,3 @@
-#Create a vector
 #The rep() function is used to repeate
 #The value to be repeated is the number 1 
 #1e9 is the scientific notation for one billion
